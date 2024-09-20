@@ -24,5 +24,4 @@ interface ApiService {
         @Field("id_barang") idBarang: Int,
         @Field("tanggal_pinjam") tanggalPinjam: String
     ): Call<ResponseBody>
-
 }
