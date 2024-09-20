@@ -15,6 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- button to tambah peminjaman -->
+    <Button
+        android:id="@+id/btnTambahPeminjaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Peminjaman"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingRight="15dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPeminjaman"
         android:layout_width="0dp"

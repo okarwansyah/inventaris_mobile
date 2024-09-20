@@ -11,8 +11,11 @@ import com.okaarwansyah.aplikasi1.model.Peminjaman
 import com.okaarwansyah.aplikasi1.model.Siswa
 import com.okaarwansyah.aplikasi1.network.RetrofitClient
 import retrofit2.Call
+import android.content.Intent
+import android.widget.Button
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class DataPeminjaman : AppCompatActivity() {
     private lateinit var recyclerViewPeminjaman : RecyclerView
@@ -21,6 +24,12 @@ class DataPeminjaman : AppCompatActivity() {
         setContentView(R.layout.data_peminjaman)
         recyclerViewPeminjaman = findViewById(R.id.recyclerViewPeminjaman)
         recyclerViewPeminjaman.layoutManager = LinearLayoutManager(this)
+
+        val buttomTambahPeminjaman = findViewById<Button>(R.id.btnTambahPeminjaman)
+        buttomTambahPeminjaman.setOnClickListener {
+            val intent = Intent(this, PeminjamanActivity::class.java)
+            startActivity(intent)
+        }
 
         RetrofitClient.api.getPeminjaman().enqueue(object : Callback<List<Peminjaman>> {
             override fun onResponse(call: Call<List<Peminjaman>>, response: Response<List<Peminjaman>>) {
