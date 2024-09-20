@@ -1,0 +1,76 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <!-- NIS TextView -->
+    <TextView
+        android:id="@+id/tvNis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIS"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNamaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNis"
+        android:layout_marginStart="6dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvStatusBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Status Barang"
+        android:layout_marginStart="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNamaBarang" />
+
+    <TextView
+        android:id="@+id/tvTanggalPeminjaman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Tanggal Peminjaman"
+        android:layout_marginStart="6dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvStatusBarang" />
+
+    <TextView
+        android:id="@+id/tvTanggalPengembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Pengembalian"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNis"
+        />
+
+    <!-- aksi untuk mengembalikan barang -->
+    <Button
+        android:id="@+id/btnKembalikan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembalikan"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTanggalPengembalian"
+        android:layout_marginStart="6dp"
+        android:textColor="@android:color/white"
+        android:padding="6dp"
+        android:visibility="gone"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
