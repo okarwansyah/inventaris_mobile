@@ -24,5 +24,6 @@
         <activity android:name=".DataSiswa"/>
         <activity android:name=".DataBarang"/>
         <activity android:name=".DataPeminjaman"/>
+        <activity android:name=".PeminjamanActivity"/>
     </application>
 </manifest>
