@@ -20,10 +20,10 @@ class BarangAdapter (private val barangList: List<Barang>) : RecyclerView.Adapte
     }
 
     override fun onBindViewHolder(holder: BarangViewHolder, position: Int) {
-        val siswa = barangList[position]
-        holder.tvKodeBarang.text = siswa.id
-        holder.tvNamaBarang.text = siswa.nama
-        holder.tvKeteranganBarang.text = siswa.keterangan
+        val barang = barangList[position]
+        holder.tvKodeBarang.text = barang.id.toString()
+        holder.tvNamaBarang.text = barang.nama
+        holder.tvKeteranganBarang.text = barang.keterangan
     }
 
     override fun getItemCount(): Int {

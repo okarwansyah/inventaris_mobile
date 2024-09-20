@@ -18,7 +18,8 @@ interface ApiService {
     @FormUrlEncoded
     @POST("insertToTablePinjaman")
     fun insertToTablePinjaman(
-        @Field("id") itemId: Int,
-        @Field("value") value: String
-    )
+        @Field("id_barang") idBarang: Int,
+        @Field("value_to_insert") valueToInsert: String
+    ): Call<Void>
+
 }
