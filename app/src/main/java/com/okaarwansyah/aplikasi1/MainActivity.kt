@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         val buttonSiswa = findViewById<Button>(R.id.buttonSiswa) // variabel pemanggilan Button DataSiswa
         val buttonBarang = findViewById<Button>(R.id.buttonBarang)
+        val buttonPeminjaman = findViewById<Button>(R.id.buttonPeminjaman)
 
         buttonSiswa.setOnClickListener {
             val intent = Intent(this, DataSiswa::class.java) // perintah pindah page
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonBarang.setOnClickListener {
             val intent = Intent(this, DataBarang::class.java)
+            startActivity(intent)
+        }
+
+        buttonPeminjaman.setOnClickListener {
+            val intent = Intent(this,PeminjamanActivity::class.java)
             startActivity(intent)
         }
     }

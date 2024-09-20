@@ -23,5 +23,6 @@
         </activity>
         <activity android:name=".DataSiswa"/>
         <activity android:name=".DataBarang"/>
+        <activity android:name=".PeminjamanActivity"/>
     </application>
 </manifest>

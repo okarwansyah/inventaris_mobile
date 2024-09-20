@@ -8,16 +8,20 @@
 
     <!-- Spinner element -->
     <Spinner
-        android:id="@+id/spinnerBarang"
+        android:id="@+id/spinnerSiswa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:minHeight="48dp"
         android:spinnerMode="dropdown" />
 
-    <!-- Button to submit selected data -->
+    <Spinner
+        android:id="@+id/spinnerBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown" />
     <Button
-        android:id="@+id/submitButton"
+        android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit" />
